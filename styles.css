@@ -1,0 +1,259 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  background: url('file:///C:/Users/Anjali%20Tiwari/Desktop/img.webp') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #fff; /* White text color */
+  background-image: linear-gradient,url('file:///C:/Users/Anjali%20Tiwari/Desktop/imag2.png') no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
+}
+.contact {
+  background: url('sunderdeep.jpg') no-repeat center center/cover;
+  background-color: black; /* White background color */
+}
+.contact
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  color: white;
+}
+
+
+.login{
+  padding: 50px 0;
+  text-align: center;
+  color: #fff; /* White text color */
+  background: skyblue
+  background-color skyblue; /* semi-transparent black overlay */
+}
+.enquiry {
+  padding: 50px 0;
+  text-align: center;
+  color: #fff; /* White text color */
+  background: url('file:///C:/Users/Anjali%20Tiwari/Desktop/img.webp') no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
+}
+
+
+.about h2, .contact h2, .login h2, .enquiry h2 {
+  font-weight: bold; /* Bold text */
+  font-size: 24px; /* Bigger font size */
+  margin-bottom: 20px;
+}
+
+.about p, .contact p, .login p, .enquiry p,
+.about form input[type="text"], .about form input[type="email"], .about form textarea,
+.contact form input[type="text"], .contact form input[type="email"], .contact form textarea,
+.login form input[type="text"], .login form input[type="password"],
+.enquiry form input[type="text"], .enquiry form input[type="email"], .enquiry form textarea {
+  font-weight: bold; /* Bold text */
+  font-size: 18px; /* Bigger font size */
+  color: #000; /* Black text color */
+}
+.contact p,
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  color: #fff;
+}
+.login p,
+.login form input[type="text"],
+.login form input[type="password"] {
+  color: #000;
+}
+#login{
+  color: #000;
+}
+
+
+.about form input[type="text"], .about form input[type="email"], .about form textarea,
+.contact form input[type="text"], .contact form input[type="email"], .contact form textarea,
+.login form input[type="text"], .login form input[type="password"],
+.enquiry form input[type="text"], .enquiry form input[type="email"], .enquiry form textarea {
+  background-color: #fff; /* White text box background color */
+  border: 1px solid #007bff; /* Blue border */
+  padding: 8px; /* smaller padding */
+  margin-bottom: 10px;
+  width: 60%; /* smaller width */
+  box-sizing: border-box;
+}
+
+.about form input[type="submit"], .contact form input[type="submit"],
+.enquiry form input[type="submit"], .login form input[type="submit"] {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header .container h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+  }
+  /* Updated CSS */
+.logo {
+  width: 50px; /* Adjust the size of the logo as needed */
+  height: auto;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+}
